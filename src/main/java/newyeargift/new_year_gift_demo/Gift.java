@@ -51,16 +51,23 @@ public class Gift {
 		}
 		System.out.println();
 	}
-	//finding cost of candies in range of 10 and 20
+	//finding cost of candies in range of 5 and 10
 	void findCandies()
 	{
-		System.out.println("List of Candies whose cost is in between 10 and 20 : "); 
+		// for checking whether candies present in range of 5 and 10
+		int flag=0;
+		System.out.println("List of Candies whose cost is in between 5 and 10 : "); 
 		for(int i=0;i<c.size();i++)
 		{
-			if(c.get(i).get_price()>=10 && c.get(i).get_price()<=20)
+			if(c.get(i).get_price()>=5 && c.get(i).get_price()<=10)
 			{
+				flag=1;
 				System.out.println("Candie name : "+c.get(i).name+"\tRate : "+c.get(i).get_price());
 			}
+		}
+		if(flag==0)
+		{
+			System.out.println("There are no candies");
 		}
 		System.out.println();
 	}

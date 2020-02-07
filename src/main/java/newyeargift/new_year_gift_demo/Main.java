@@ -19,14 +19,18 @@ public class Main {
 		Candies cn3=new Candies("Chewing Gums",22.0,30.0,15);
 		//Chocolates of first gift
 		ArrayList<Candies> candy=new ArrayList<Candies>(2);
-		candy.add(cn1);
 		candy.add(cn2);
+		candy.add(cn3);
 		//First Gift
 		Gift gift1=new Gift("Jhansi",choco,candy);
 		gift1.calculate_weight();
 		gift1.sortByWeight();
 		gift1.findCandies();
+		
+		
 		System.out.println("========================================================"+"\n");
+		
+		
 		//Chocolates of second gift
 		ArrayList<Chocolates> choco1=new ArrayList<Chocolates>(2);
 		choco1.add(ch1);
